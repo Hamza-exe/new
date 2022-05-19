@@ -1,0 +1,17 @@
+/* These are the styles for the dialog */
+dialog {
+    border: solid gray 2px;
+    border-radius: 10px;
+}
+
+/* This is the style for outside the dialog
+        when the dialog is displayed
+        to make it clear that it is a "modal dialog" and
+        the user cannot interact with anything outside it. */
+::backdrop,
+/* for native <dialog> */
+dialog+.backdrop {
+    /* for dialog-polyfill */
+    /* a transparent shade of gray */
+    background-color: rgba(0, 0, 0, 0.2);
+}
